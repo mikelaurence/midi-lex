@@ -8,7 +8,7 @@ module MidiMix
     def use_driver(driver)
       @driver = driver
       require "midi_mix/drivers/#{driver}"
-      self.class.class_eval "include MidiMix::Drivers::#{driver.to_s.camelize}::#{self.class.to_s.split('::').last}"
+      extend "MidiMix::Drivers::#{driver.to_s.camelize}::#{self.class.to_s.split('::').last}".camelize.constantize
     end
   
   end

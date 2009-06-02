@@ -26,13 +26,18 @@ module MidiMix
         def open_port(name)
           if @port = port(:realDestinations, name)
             @name = name
-            @port.addSender(self) if @endpoint
+            @sender = MidiSender.new
+            @sender.port = @port
             true
           end
         end
         
         def create_port(name)
           false
+        end
+        
+        def message(*bytes)
+          @sender.message bytes.flatten.collect{ |i| i.to_int }
         end
         
       end
