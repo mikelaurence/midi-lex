@@ -23,15 +23,16 @@ module MidiMix
           super(:realDestinations)
         end
         
-        def open(name)
+        def open_port(name)
           if @port = port(:realDestinations, name)
             @name = name
-            @endpoint.addSender(self) if @endpoint
+            @port.addSender(self) if @endpoint
+            true
           end
         end
         
-        def create
-          
+        def create_port(name)
+          false
         end
         
       end
@@ -43,23 +44,31 @@ module MidiMix
           super(:realSources)
         end
         
-        def open(name)
-          if @port = port(:realDestinations, name)
+        def open_port(name)
+          if @port = port(:realSources, name)
             @name = name
             @receiver = MidiReceiver.new
             @port.addReceiver(@receiver)
+            true
           end
         end
         
-        def create(name)
-          
+        def create_port(name)
+          false
         end
         
         def new_data?
           @receiver.newData
         end
         
-      end      
+      end
+      
+      module Timer
+        def callback(target, method, frequency = 1.0 / 100.0)
+          @timer = OSX::NSTimer.scheduledTimerWithTimeInterval_target_selector_userInfo_repeats_(1.0 / 100.0, target, method, nil, true)
+          @runloop = OSX::NSRunLoop.currentRunLoop.addTimer_forMode(@timer, OSX::NSEventTrackingRunLoopMode)
+        end
+      end
       
     end
   end

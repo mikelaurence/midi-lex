@@ -1,12 +1,5 @@
-# -*- ruby -*-
-
-require 'rubygems'
-require 'hoe'
-require './lib/midi_mix.rb'
-
-Hoe.new('midi_mix', MidiMix::VERSION) do |p|
-  # p.rubyforge_name = 'midi_mixx' # if different than lowercase project name
-  # p.developer('FIX', 'FIX@example.com')
+desc 'Setup MacRuby externals (copy PYMIDI framework to /Library/Frameworks if not yet extant & copy misc obj-c source to project)'
+Rake::RDocTask.new(:rdoc) do |rdoc|
+  files = ['MidiReceiver.m', 'MidiMessage.m']
+  puts "Please add the following files to your XCode project: #{files.join(', ')}"
 end
-
-# vim: syntax=Ruby
