@@ -64,10 +64,12 @@ module MidiMix
       end
       
       module Timer
-        def callback(target, method, frequency = 1.0 / 100.0)
-          @timer = OSX::NSTimer.scheduledTimerWithTimeInterval_target_selector_userInfo_repeats_(1.0 / 100.0, target, method, nil, true)
-          @runloop = OSX::NSRunLoop.currentRunLoop.addTimer_forMode(@timer, OSX::NSEventTrackingRunLoopMode)
+        
+        def start(options = {})
+          @timer = NSTimer.scheduledTimerWithTimeInterval(options[:frequency] || 1.0/100.0, target:self, selector: :tick, userInfo:nil, repeats:true)
+          @runloop = NSRunLoop.currentRunLoop.addTimer(@timer, forMode:'NSRunLoopTrackingRunLoopMode')
         end
+
       end
       
     end
