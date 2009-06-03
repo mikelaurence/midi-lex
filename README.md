@@ -17,7 +17,7 @@ This project is currently in heavy development, and only has drivers for MacRuby
 ## INSTALL:
 
 Since this isn't gem-i-fied yet, you're encouraged to just clone it to your hard drive and then add it to your project's load path:
-$LOAD_PATH << '/src/ruby/midi-mix/lib'
+`$LOAD_PATH << '/src/ruby/midi-mix/lib'`
 
 ## LICENSE:
 
