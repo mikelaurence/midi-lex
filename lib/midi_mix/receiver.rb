@@ -1,7 +1,7 @@
 module MidiMix
   class Receiver < Messenger
     
-    include MidiMix::Receivable::Raw
+    include MidiMix::Receivable::Typed
     include MidiMix::Messages::Channel
     include MidiMix::Messages::Global
     
@@ -16,8 +16,8 @@ module MidiMix
     end
     
     def tick
-      if data = new_data?
-        data.each { |d| process d }
+      if messages = new_data?
+        messages.each { |m| process m.data }
       end
     end
     

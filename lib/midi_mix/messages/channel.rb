@@ -50,7 +50,18 @@ module MidiMix
       end
       
       class ControlChange
+        attr_accessor :channel, :number, :value
         STATUS = 0xb0
+        
+        def initialize(channel, number, value)
+          @channel = channel
+          @number = number
+          @value = value
+        end
+        
+        def to_a
+          [STATUS | @channel, @number, @value]
+        end
       end
       
       class ProgramChange

@@ -1,4 +1,4 @@
-# midi_mix
+# MidiMix
 
 http://github.com/mikelaurence/midi-mix/tree/master
 

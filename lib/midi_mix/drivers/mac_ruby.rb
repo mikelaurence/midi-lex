@@ -40,6 +40,10 @@ module MidiMix
           @sender.message bytes.flatten.collect{ |i| i.to_int }
         end
         
+        def <<(data)
+          @sender.message data.to_a
+        end
+        
       end
       
       module Receiver

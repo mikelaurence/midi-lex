@@ -9,6 +9,8 @@ module MidiMix
     end
 
     module Typed
+      include MidiMix::Messages::Channel
+
       private
       
       def process(data)
