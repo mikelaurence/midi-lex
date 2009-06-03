@@ -24,25 +24,25 @@ module MidiMix
     include MidiMix::Messages::Channel
 
     ### Shortcut to send a note_on message.
-    def note_on(pitch, channel = 0, velocity = 64)
+    def note_on(channel, pitch, velocity = 64)
       self << [0x90 | channel, pitch, velocity]
     end
     
 
     ### Shortcut to send a note_off message.
-    def note_off(pitch, channel = 0, velocity = 0)
+    def note_off(channel, pitch, velocity = 0)
       self << [0x80 | channel, pitch, velocity]
     end
     
 
     ### Shortcut to send a polyphonic aftertouch message for an individual note.
-    def aftertouch(pitch, channel = 0, pressure = 64)
+    def aftertouch(channel, pitch, pressure = 64)
       self << [0xa0 | channel, pitch, pressure]
     end
     
 
     ### Shortcut to send a control change.
-    def control_change(number, channel = 0, value = 64)
+    def control_change(channel, number, value = 64)
       self << [0xb0 | channel, number, value]
     end
 

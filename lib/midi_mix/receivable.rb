@@ -10,6 +10,7 @@ module MidiMix
 
     module Typed
       include MidiMix::Messages::Channel
+      include MidiMix::Messages::Global
 
       private
       
@@ -26,7 +27,11 @@ module MidiMix
         when 0xf0; Sysex
         end
         
-        @target.send @method, klass.new(*filter_data(data))
+        begin
+          @target.send @method, klass.new(*filter_data(data))
+        rescue
+          puts "[Receivable::Typed] Error creating #{klass} with args: #{filter_data(data).inspect}"
+        end
       end
     end
 
