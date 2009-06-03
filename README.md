@@ -1,25 +1,25 @@
-= midi_mix
+# midi_mix
 
 http://github.com/mikelaurence/midi-mix/tree/master
 
-== DESCRIPTION:
+## DESCRIPTION:
 
 Cross-platform MIDI input & output for all varieties of Ruby.
 
 This project is currently in heavy development, and only has drivers for MacRuby, as that is the author's main priority at the moment :-)
 
-== FEATURES/PROBLEMS:
+## FEATURES/PROBLEMS:
 
 * Needs all that MIDIator driver love ported over!
 * Needs rbcoremidi ported over!
 * Needs some kind of windows input - possibly starting with a simple TCP bridge to a Max patch, since that's easiest!
 
-== INSTALL:
+## INSTALL:
 
 Since this isn't gem-i-fied yet, you're encouraged to just clone it to your hard drive and then add it to your project's load path:
 $LOAD_PATH << '/src/ruby/midi-mix/lib'
 
-== LICENSE:
+## LICENSE:
 
 (The MIT License)
 
