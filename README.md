@@ -8,10 +8,10 @@ Cross-platform MIDI input & output for all varieties of Ruby.
 
 This project is currently in heavy development, and only has drivers for MacRuby, as that is the author's main priority at the moment :-)
 
-## FEATURES/PROBLEMS:
+## ISSUES:
 
+* rbcoremidi doesn't provide full source names (e.g., 'PORT A' instead of 'KONTROL49 PORT A')
 * Needs all that MIDIator driver love ported over!
-* Needs rbcoremidi ported over!
 * Needs some kind of windows input - possibly starting with a simple TCP bridge to a Max patch, since that's easiest!
 
 ## INSTALL:

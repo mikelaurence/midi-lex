@@ -1,7 +1,9 @@
+framework 'macruby-midi'
+
 module MidiMix
   module Drivers
     module MacRuby
-      
+            
       module Base
         
         attr_reader :name

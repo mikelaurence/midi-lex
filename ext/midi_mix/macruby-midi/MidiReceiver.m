@@ -6,7 +6,6 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import <MacRuby/MacRuby.h>
 #include <CoreMIDI/CoreMIDI.h>
 #import <MidiMessage.h>
 
@@ -25,14 +24,8 @@
 
 @implementation MidiReceiver
 
-- (id) init {
-    [[MacRuby sharedRuntime] evaluateString:@"class X; def foo(x=1, *a); p 'hi Im a ruby object'; end; end"];
-    Class klass = NSClassFromString(@"X");
-    receiver = [klass new];
-    [receiver performRubySelector:@selector(foo)];
-    
+- (id) init {    
     data = [NSMutableArray new];
-    
     return self;
 }
 

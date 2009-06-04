@@ -1,0 +1,206 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeArchitecturePreference = x86_64;
+		activeBuildConfigurationName = Release;
+		activeTarget = 8DC2EF4F0486A6940098B216 /* macruby-midi */;
+		addToTargets = (
+			8DC2EF4F0486A6940098B216 /* macruby-midi */,
+		);
+		codeSenseManager = B5F3BF610FD86CA800C6E434 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					653,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					301,
+					60,
+					20,
+					48.16259765625,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 265841863;
+			PBXWorkspaceStateSaveDate = 265841863;
+		};
+		perUserProjectItems = {
+			B5F3BFC00FD86DE200C6E434 /* PBXBookmark */ = B5F3BFC00FD86DE200C6E434 /* PBXBookmark */;
+			B5F3BFC10FD86DE200C6E434 /* PBXTextBookmark */ = B5F3BFC10FD86DE200C6E434 /* PBXTextBookmark */;
+			B5F3BFC70FD86E3A00C6E434 /* PBXTextBookmark */ = B5F3BFC70FD86E3A00C6E434 /* PBXTextBookmark */;
+			B5F3BFC80FD86E4800C6E434 /* PBXTextBookmark */ = B5F3BFC80FD86E4800C6E434 /* PBXTextBookmark */;
+			B5F3BFC90FD86E4800C6E434 /* PBXTextBookmark */ = B5F3BFC90FD86E4800C6E434 /* PBXTextBookmark */;
+			B5F3BFCA0FD86E4A00C6E434 /* PBXTextBookmark */ = B5F3BFCA0FD86E4A00C6E434 /* PBXTextBookmark */;
+			B5F3BFCB0FD86E4A00C6E434 /* PBXTextBookmark */ = B5F3BFCB0FD86E4A00C6E434 /* PBXTextBookmark */;
+			B5F3BFCC0FD86E4A00C6E434 /* PBXTextBookmark */ = B5F3BFCC0FD86E4A00C6E434 /* PBXTextBookmark */;
+			B5F3BFCE0FD86FE300C6E434 /* PBXTextBookmark */ = B5F3BFCE0FD86FE300C6E434 /* PBXTextBookmark */;
+			B5F3BFCF0FD86FE300C6E434 /* PBXTextBookmark */ = B5F3BFCF0FD86FE300C6E434 /* PBXTextBookmark */;
+			B5F3BFD00FD86FE300C6E434 /* PBXTextBookmark */ = B5F3BFD00FD86FE300C6E434 /* PBXTextBookmark */;
+		};
+		sourceControlManager = B5F3BF600FD86CA800C6E434 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8DC2EF4F0486A6940098B216 /* macruby-midi */ = {
+		activeExec = 0;
+	};
+	B5F3BF600FD86CA800C6E434 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	B5F3BF610FD86CA800C6E434 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	B5F3BF750FD86CE500C6E434 /* MidiReceiver.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {831, 868}}";
+			sepNavSelRange = "{21, 0}";
+			sepNavVisRange = "{0, 565}";
+		};
+	};
+	B5F3BF7E0FD86D0E00C6E434 /* PYMIDIEndpoint.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {831, 6062}}";
+			sepNavSelRange = "{2260, 41}";
+			sepNavVisRange = "{1949, 608}";
+		};
+	};
+	B5F3BFC00FD86DE200C6E434 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = B5F3BF750FD86CE500C6E434 /* MidiReceiver.m */;
+	};
+	B5F3BFC10FD86DE200C6E434 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B5F3BF750FD86CE500C6E434 /* MidiReceiver.m */;
+		name = "MidiReceiver.m: 8";
+		rLen = 0;
+		rLoc = 154;
+		rType = 0;
+		vrLen = 565;
+		vrLoc = 0;
+	};
+	B5F3BFC70FD86E3A00C6E434 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B5F3BF750FD86CE500C6E434 /* MidiReceiver.m */;
+		name = "MidiReceiver.m: 8";
+		rLen = 0;
+		rLoc = 154;
+		rType = 0;
+		vrLen = 565;
+		vrLoc = 0;
+	};
+	B5F3BFC80FD86E4800C6E434 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "warning: comparison between pointer and integer";
+		fRef = B5F3BF7E0FD86D0E00C6E434 /* PYMIDIEndpoint.m */;
+		rLen = 1;
+		rLoc = 115;
+		rType = 1;
+	};
+	B5F3BFC90FD86E4800C6E434 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B5F3BF7E0FD86D0E00C6E434 /* PYMIDIEndpoint.m */;
+		name = "PYMIDIEndpoint.m: 116";
+		rLen = 41;
+		rLoc = 2260;
+		rType = 0;
+		vrLen = 274;
+		vrLoc = 2108;
+	};
+	B5F3BFCA0FD86E4A00C6E434 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B5F3BF750FD86CE500C6E434 /* MidiReceiver.m */;
+		name = "MidiReceiver.m: 8";
+		rLen = 0;
+		rLoc = 154;
+		rType = 0;
+		vrLen = 565;
+		vrLoc = 0;
+	};
+	B5F3BFCB0FD86E4A00C6E434 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B5F3BF750FD86CE500C6E434 /* MidiReceiver.m */;
+		name = "MidiReceiver.m: 8";
+		rLen = 0;
+		rLoc = 154;
+		rType = 0;
+		vrLen = 565;
+		vrLoc = 0;
+	};
+	B5F3BFCC0FD86E4A00C6E434 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B5F3BF7E0FD86D0E00C6E434 /* PYMIDIEndpoint.m */;
+		name = "PYMIDIEndpoint.m: 116";
+		rLen = 41;
+		rLoc = 2260;
+		rType = 0;
+		vrLen = 606;
+		vrLoc = 1949;
+	};
+	B5F3BFCE0FD86FE300C6E434 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B5F3BF7E0FD86D0E00C6E434 /* PYMIDIEndpoint.m */;
+		name = "PYMIDIEndpoint.m: 116";
+		rLen = 41;
+		rLoc = 2260;
+		rType = 0;
+		vrLen = 606;
+		vrLoc = 1949;
+	};
+	B5F3BFCF0FD86FE300C6E434 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B5F3BF7E0FD86D0E00C6E434 /* PYMIDIEndpoint.m */;
+		name = "PYMIDIEndpoint.m: 116";
+		rLen = 41;
+		rLoc = 2260;
+		rType = 0;
+		vrLen = 606;
+		vrLoc = 1949;
+	};
+	B5F3BFD00FD86FE300C6E434 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B5F3BF750FD86CE500C6E434 /* MidiReceiver.m */;
+		name = "MidiReceiver.m: 2";
+		rLen = 0;
+		rLoc = 21;
+		rType = 0;
+		vrLen = 565;
+		vrLoc = 0;
+	};
+}

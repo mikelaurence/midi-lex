@@ -65,5 +65,10 @@ module MidiMix
     end
     alias bend pitch_bend
     
+    ### Shortcut to send a sysex message.
+    def sysex(*data)
+      self << [0xf0] + data.flatten + [0xf7]
+    end
+    
   end
 end
