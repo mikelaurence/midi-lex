@@ -45,10 +45,8 @@
     // Create byte array using supplied data
     Byte bytes[length];
     int i;
-    for (i = 0; i < length; i++) {
+    for (i = 0; i < length; i++)
         bytes[i] = [[data objectAtIndex:i] intValue];
-        NSLog(@"%@", [data objectAtIndex:i]);
-    }
 
     // Create MIDI packet list to be sent out
     Byte packetBytes[sizeof(UInt32) + sizeof(MIDITimeStamp) + sizeof(length) + length];
