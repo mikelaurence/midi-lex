@@ -1,7 +1,8 @@
 require 'rubygems'
 
-require 'midi_mix/messages/channel'
+require 'midi_mix/messages/core'
 require 'midi_mix/messages/global'
+require 'midi_mix/messages/channel'
 
 require 'string_extensions'
 require 'midi_mix/driverable'

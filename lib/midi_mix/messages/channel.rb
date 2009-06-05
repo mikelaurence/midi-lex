@@ -1,10 +1,12 @@
 module MidiMix
   module Messages
     module Channel
+
+      include MidiMix::Messages::Core
       
       private
       
-      class Note
+      class Note < MidiMessage
         attr_accessor :pitch, :channel, :velocity, :delta_time
         
         def initialize(channel, pitch, velocity = 64, delta_time = 0)
@@ -49,7 +51,7 @@ module MidiMix
         alias pressure= velocity=
       end
       
-      class ControlChange
+      class ControlChange < MidiMessage
         attr_accessor :channel, :number, :value
         STATUS = 0xb0
         
@@ -64,15 +66,15 @@ module MidiMix
         end
       end
       
-      class ProgramChange
+      class ProgramChange < MidiMessage
         STATUS = 0xc0
       end
       
-      class ChannelAftertouch
+      class ChannelAftertouch < MidiMessage
         STATUS = 0xd0
       end
       
-      class PitchBend
+      class PitchBend < MidiMessage
         STATUS = 0xe0
       end
     

@@ -2,7 +2,9 @@ module MidiMix
   module Messages
     module Global
       
-      class Sysex
+      include MidiMix::Messages::Core
+      
+      class Sysex < MidiMessage
         attr_accessor :data
         
         def initialize(*data)
