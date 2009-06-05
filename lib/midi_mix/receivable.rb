@@ -27,11 +27,14 @@ module MidiMix
         when 0xf0; Sysex
         end
         
+        msg = nil
         begin
-          @target.send @method, klass.new(*filter_data(data))
+          msg = klass.new(*filter_data(data))
         rescue
-          puts "[Receivable::Typed] Error creating #{klass} with args: #{filter_data(data).inspect}"
+          puts "[Receivable::Typed] Error creating #{klass} with #{data.size} args: #{filter_data(data).inspect}"
         end
+        
+        @target.send @method, msg if msg
       end
     end
 

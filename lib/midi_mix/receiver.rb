@@ -5,14 +5,26 @@ module MidiMix
     include MidiMix::Messages::Channel
     include MidiMix::Messages::Global
     
-    def capture(options = {})
-      raise "Must include a target for capturing MIDI data" unless @target = options[:target]
-      @method = options[:method] || :capture
-      self.extend "MidiMix::Receivable::#{options[:format].to_s.camelize}".constantize
+    def capture(options = {}, &block)
+      self.extend "MidiMix::Receivable::#{options[:format].to_s.camelize}".constantize if options[:format]
       
-      @timer ||= Timer.primary || Timer.new(@driver)
-      @timer.add_callback self
-      @timer.start :frequency => options[:frequency]
+      if block_given?
+        @target = self
+        @method = :process_block
+        @block = block
+        while true
+          tick 
+          sleep 0.001
+        end
+      else
+        
+        raise "Must include a target for capturing MIDI data without block" unless @target = options[:target]
+        @method = options[:method] || :capture
+        
+        @timer ||= Timer.primary || Timer.new(@driver)
+        @timer.add_callback self
+        @timer.start :frequency => options[:frequency]
+      end
     end
     
     def tick
@@ -21,12 +33,16 @@ module MidiMix
       end
     end
     
+    def process_block(data)
+      @block.call data
+    end
+    
     def filter_data(data)
       if data[0] < 0xf0
         data[0] = data[0] & 0xf
         return data
       elsif data[0] < 0xf6
-        return data[1..-1]
+        return data[1..-2]
       end
         []
     end

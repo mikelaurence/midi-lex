@@ -5,8 +5,8 @@ module MidiMix
       class Sysex
         attr_accessor :data
         
-        def initialize(data)
-          @data = data          
+        def initialize(*data)
+          @data = data.flatten
         end
         
         def to_a
