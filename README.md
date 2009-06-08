@@ -10,6 +10,7 @@ MIDI input & output for multiple* varieties of Ruby.
 
 Note:
 This project owes a great deal to earlier efforts by fellow ruby MIDIists, including but not limited to:
+
 * Topher Cyll, whose "Practical Ruby Projects" book jumpstarted the whole Ruby MIDI movement, and whose core external (DL) code is still utilized by this library
 * Ben Bleything, whose MIDIator gem inspired the cross-platform-ness and structural design of this library
 * Pete Yandell, whose PYMIDI framework is encapsulated in MidiLex's macruby-midi framework (and which made it *much* easier to get MIDI working in MacRuby!)
