@@ -4,7 +4,7 @@ http://github.com/mikelaurence/midi-lex/tree/master
 
 ## DESCRIPTION:
 
-MIDI input & output for multiple* varieties of Ruby.
+A soon-to-be-cross-platform library for Ruby MIDI input & output (full dupLEX, get it? Hey, you gotta come up with a name somehow!)
 
 *MidiLex is currently in heavy development and only has drivers for MacRuby, as that is the author's main priority at the moment :-)
 
