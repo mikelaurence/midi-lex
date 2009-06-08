@@ -1,12 +1,12 @@
-module MidiMix
+module MidiLex
   class Receiver < Messenger
     
-    include MidiMix::Receivable::Typed
-    include MidiMix::Messages::Channel
-    include MidiMix::Messages::Global
+    include MidiLex::Receivable::Typed
+    include MidiLex::Messages::Channel
+    include MidiLex::Messages::Global
     
     def capture(options = {}, &block)
-      self.extend "MidiMix::Receivable::#{options[:format].to_s.camelize}".constantize if options[:format]
+      self.extend "MidiLex::Receivable::#{options[:format].to_s.camelize}".constantize if options[:format]
       
       if block_given?
         @target = self

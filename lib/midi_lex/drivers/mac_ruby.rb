@@ -1,6 +1,6 @@
 framework 'macruby-midi'
 
-module MidiMix
+module MidiLex
   module Drivers
     module MacRuby
             

@@ -1,4 +1,4 @@
-module MidiMix
+module MidiLex
   class Messenger
     
     include Driverable

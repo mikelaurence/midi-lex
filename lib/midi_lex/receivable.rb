@@ -1,4 +1,4 @@
-module MidiMix
+module MidiLex
   module Receivable
     module Raw
       private
@@ -9,8 +9,8 @@ module MidiMix
     end
 
     module Typed
-      include MidiMix::Messages::Channel
-      include MidiMix::Messages::Global
+      include MidiLex::Messages::Channel
+      include MidiLex::Messages::Global
 
       private
       

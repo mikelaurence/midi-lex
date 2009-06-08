@@ -1,9 +1,9 @@
-$LOAD_PATH << File.join(File.dirname(__FILE__), '../lib')
+$LOAD_PATH << File.join(File.dirname(__FILE__), '../../lib')
 
 require 'benchmark'
-require 'midi_mix'
+require 'midi_lex'
 
-include MidiMix::Messages::Channel
+include MidiLex::Messages::Channel
 
 def method(n)
   case(n)

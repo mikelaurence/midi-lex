@@ -1,4 +1,4 @@
-module MidiMix
+module MidiLex
   module Drivers
     module MacCore
       
@@ -33,11 +33,11 @@ module MidiMix
         def open_port(name)
           if @port_number = ports.index(name)
             @name = name
-            client_name = CF.cFStringCreateWithCString(nil, "MidiMixClient", 0)
+            client_name = CF.cFStringCreateWithCString(nil, "MidiLexClient", 0)
             @client = DL::PtrData.new(nil)
             C.mIDIClientCreate(client_name, nil, nil, @client.ref);
 
-            port_name = CF.cFStringCreateWithCString(nil, "MidiMixPort", 0)
+            port_name = CF.cFStringCreateWithCString(nil, "MidiLexPort", 0)
             @port = DL::PtrData.new(nil)
             C.mIDIOutputPortCreate(@client, port_name, @port.ref);
 

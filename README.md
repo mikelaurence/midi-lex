@@ -1,23 +1,30 @@
-# MidiMix
+# MidiLex
 
-http://github.com/mikelaurence/midi-mix/tree/master
+http://github.com/mikelaurence/midi-lex/tree/master
 
 ## DESCRIPTION:
 
-Cross-platform MIDI input & output for all varieties of Ruby.
+MIDI input & output for multiple* varieties of Ruby.
 
-This project is currently in heavy development, and only has drivers for MacRuby, as that is the author's main priority at the moment :-)
+*MidiLex is currently in heavy development and only has drivers for MacRuby, as that is the author's main priority at the moment :-)
+
+Note:
+This project owes a great deal to earlier efforts by fellow ruby MIDIists, including but not limited to:
+* Topher Cyll, whose "Practical Ruby Projects" book jumpstarted the whole Ruby MIDI movement, and whose core external (DL) code is still utilized by this library
+* Ben Bleything, whose MIDIator gem inspired the cross-platform-ness and structural design of this library
+* Pete Yandell, whose PYMIDI framework is encapsulated in MidiLex's macruby-midi framework (and which made it *much* easier to get MIDI working in MacRuby!)
 
 ## ISSUES:
 
+* Needs DL output drivers ported over
+* rbcoremidi driver is un-tested - newest version of the bundle not working on my machine yet, for some reason...
 * rbcoremidi doesn't provide full source names (e.g., 'PORT A' instead of 'KONTROL49 PORT A')
-* Needs all that MIDIator driver love ported over!
-* Needs some kind of windows input - possibly starting with a simple TCP bridge to a Max patch, since that's easiest!
+* Needs some kind of Windows input - possibly starting with a simple TCP bridge to a Max patch, since that's easiest!
 
 ## INSTALL:
 
 Since this isn't gem-i-fied yet, you're encouraged to just clone it to your hard drive and then add it to your project's load path:  
-`$LOAD_PATH << '/src/ruby/midi-mix/lib'`
+`$LOAD_PATH << '/src/ruby/midi-lex/lib'`
 
 ## LICENSE:
 

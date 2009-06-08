@@ -1,8 +1,8 @@
-module MidiMix
+module MidiLex
   module Messages
     module Global
       
-      include MidiMix::Messages::Core
+      include MidiLex::Messages::Core
       
       class Sysex < MidiMessage
         attr_accessor :data

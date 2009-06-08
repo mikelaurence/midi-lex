@@ -1,9 +1,9 @@
 $LOAD_PATH << File.join(File.dirname(__FILE__), 'lib')
 
-require 'midi_mix'
-include MidiMix::Messages::Channel
+require 'midi_lex'
+include MidiLex::Messages::Channel
 
-sender = MidiMix::Sender.new(:mac_core)
+sender = MidiLex::Sender.new(:mac_core)
 
 
 

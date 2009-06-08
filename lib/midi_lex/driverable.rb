@@ -1,4 +1,4 @@
-module MidiMix
+module MidiLex
   module Driverable
   
     def initialize(driver = nil, options = {})
@@ -8,8 +8,8 @@ module MidiMix
     
     def use_driver(driver)
       @driver = driver
-      require "midi_mix/drivers/#{driver}"
-      extend "MidiMix::Drivers::#{driver.to_s.camelize}::#{self.class.to_s.split('::').last}".camelize.constantize
+      require "midi_lex/drivers/#{driver}"
+      extend "MidiLex::Drivers::#{driver.to_s.camelize}::#{self.class.to_s.split('::').last}".camelize.constantize
     end
   
   end

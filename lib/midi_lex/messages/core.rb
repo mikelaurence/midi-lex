@@ -1,4 +1,4 @@
-module MidiMix
+module MidiLex
   module Messages
     module Core
       class MidiMessage

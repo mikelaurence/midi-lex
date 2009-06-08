@@ -1,7 +1,7 @@
 require "test/unit"
-require "midi_mix"
+require "midi_lex"
 
-class TestMidiMix < Test::Unit::TestCase
+class TestMidiLex < Test::Unit::TestCase
   def test_sanity
     flunk "write tests or I will kneecap you"
   end

@@ -56,7 +56,7 @@ class String
     downcase
   end
   
-  ### NOTE: Also stolen from ActiveSupport.  They hold the copyright.
+  ### NOTE: Also stolen from ActiveSupport. They hold the copyright.
   def constantize
     names = self.split('::')
     names.shift if names.empty? || names.first.empty?
@@ -67,6 +67,4 @@ class String
     end
     constant
   end
-  
-
 end

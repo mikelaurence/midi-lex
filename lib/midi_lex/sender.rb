@@ -16,12 +16,12 @@
 # This code released under the terms of the MIT license.
 #
 
-module MidiMix
+module MidiLex
   
   ### Base class for MIDI output
   class Sender < Messenger
     
-    include MidiMix::Messages::Channel
+    include MidiLex::Messages::Channel
 
     ### Shortcut to send a note_on message.
     def note_on(channel, pitch, velocity = 64)

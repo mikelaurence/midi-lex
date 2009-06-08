@@ -1,8 +1,8 @@
-module MidiMix
+module MidiLex
   module Messages
     module Channel
 
-      include MidiMix::Messages::Core
+      include MidiLex::Messages::Core
       
       private
       

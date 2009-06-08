@@ -1,4 +1,4 @@
-module MidiMix
+module MidiLex
   class Timer
 
     include Driverable

@@ -1,7 +1,0 @@
-History.txt
-Manifest.txt
-README.txt
-Rakefile
-bin/midi_mix
-lib/midi_mix.rb
-test/test_midi_mix.rb
