@@ -3,14 +3,14 @@
 //  laurence-live-macruby
 //
 //  Created by Mike Laurence on 5/26/09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//  Copyright 2009 Mike Laurence. All rights reserved.
 //
 
 #include <CoreMIDI/CoreMIDI.h>
+#import <MidiMessenger.h>
 #import <MidiMessage.h>
 
-@interface MidiReceiver : NSObject {
-    NSObject* receiver;
+@interface MidiReceiver : MidiMessenger {
     NSMutableArray* data;
 }
 
@@ -24,9 +24,23 @@
 
 @implementation MidiReceiver
 
-- (id) init {    
+- (id) init {
     data = [NSMutableArray new];
     return self;
+}
+
+- (void) setPort:(PYMIDIEndpoint*) newPort {
+    [self releasePort];
+    
+    // Assign new port and add self as receiver
+    port = newPort;
+    [port addReceiver:self];
+}
+
+- (void) releasePort {
+    // Release self as sender if a port is already in use
+    if (port)
+        [port removeReceiver:self];
 }
 
 - (void) processMIDIPacketList: (MIDIPacketList*) myPacketList sender:(id)sender

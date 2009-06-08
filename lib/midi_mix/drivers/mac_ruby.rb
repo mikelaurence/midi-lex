@@ -59,7 +59,7 @@ module MidiMix
           if @port = port(:realSources, name)
             @name = name
             @receiver = MidiReceiver.new
-            @port.addReceiver(@receiver)
+            @receiver.port = @port
             true
           end
         end

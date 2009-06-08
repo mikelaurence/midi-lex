@@ -3,7 +3,7 @@
 //  macruby-sequencer
 //
 //  Created by Mike Laurence on 6/2/09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//  Copyright 2009 Mike Laurence. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>

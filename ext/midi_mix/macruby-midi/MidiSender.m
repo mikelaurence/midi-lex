@@ -3,19 +3,16 @@
 //  macruby-sequencer
 //
 //  Created by Mike Laurence on 6/2/09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//  Copyright 2009 Mike Laurence. All rights reserved.
 //
 
 #import <MacRuby/MacRuby.h>
 #import <Cocoa/Cocoa.h>
 #include <CoreMIDI/CoreMIDI.h>
 #include <PYMIDI/PYMIDI.h>
+#import <MidiMessenger.h>
 
-@interface MidiSender : NSObject {
-    PYMIDIEndpoint* port;
-}
-
-@property (retain) PYMIDIEndpoint* port;
+@interface MidiSender : MidiMessenger
 
 - (void) message: (NSArray*) data;
 
@@ -24,18 +21,18 @@
 
 @implementation MidiSender
 
-- (PYMIDIEndpoint*) port {
-    return port;
-}
-
 - (void) setPort:(PYMIDIEndpoint*) newPort {
-    // Release self as sender if a port is already in use
-    if (port)
-        [port removeSender:self];
+    [self releasePort];
     
     // Assign new port and add self as sender
     port = newPort;
     [port addSender:self];
+}
+
+- (void) releasePort {
+    // Release self as sender if a port is already in use
+    if (port)
+        [port removeSender:self];
 }
 
 - (void) message: (NSArray*) data {
