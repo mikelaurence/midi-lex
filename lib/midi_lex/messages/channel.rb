@@ -6,45 +6,39 @@ module MidiLex
       
       private
       
-      class Note < MidiMessage
+      class NoteMessage < MidiMessage
         attr_accessor :pitch, :channel, :velocity, :delta_time
         
-        def initialize(channel, pitch, velocity = 64, delta_time = 0)
-          @channel = channel
+        def initialize(pitch, velocity, channel, status)
           @pitch = pitch
           @velocity = velocity
-          @delta_time = delta_time
+          @channel = channel
+          @status = status
         end
         
         def to_a
-          [STATUS | @channel, @pitch, @velocity]
+          [@status | @channel, @pitch, @velocity]
         end
       end
       
       
       public
     
-      class NoteOn < Note
-        STATUS = 0x90
-      
-        def initialize(channel, pitch, velocity = 0, delta_time = 0)
-          super(channel, pitch, velocity, delta_time)
+      class NoteOn < NoteMessage    
+        def initialize(pitch, velocity = 64, channel = 0)
+          super(pitch, velocity, channel, 0x90)
         end      
       end
       
-      class NoteOff < Note
-        STATUS = 0x80
-      
-        def initialize(channel, pitch, velocity = 0, delta_time = 0)
-          super(channel, pitch, velocity, delta_time)
+      class NoteOff < NoteMessage
+        def initialize(pitch, channel = 0, velocity = 0)
+          super(pitch, velocity, channel, 0x80)
         end      
       end
       
-      class Aftertouch < Note
-        STATUS = 0xA0
-        
-        def initialize(channel, pitch, pressure = 0)
-          super(channel, pitch, pressure)
+      class Aftertouch < NoteMessage      
+        def initialize(pitch, pressure = 0, channel = 0)
+          super(pitch, pressure, channel, 0xa0)
         end
       
         alias pressure velocity

@@ -6,6 +6,7 @@ require 'midi_lex/messages/channel'
 
 require 'string_extensions'
 require 'midi_lex/driverable'
+require 'midi_lex/sendable'
 require 'midi_lex/receivable'
 require 'midi_lex/timer'
 require 'midi_lex/messenger'
