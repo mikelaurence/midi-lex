@@ -49,10 +49,10 @@ module MidiLex
         attr_accessor :channel, :number, :value
         STATUS = 0xb0
         
-        def initialize(channel, number, value)
-          @channel = channel
+        def initialize(number, value, channel = 0)
           @number = number
           @value = value
+          @channel = channel
         end
         
         def to_a
