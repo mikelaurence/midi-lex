@@ -6,16 +6,35 @@ module MidiLex
       
       private
       
-      class NoteMessage < MidiMessage
-        attr_accessor :pitch, :channel, :velocity, :delta_time
-        
-        def initialize(pitch, velocity, channel, status)
-          @pitch = pitch
-          @velocity = velocity
-          @channel = channel
+      class ChannelMessage < MidiMessage
+        def initialize(status, channel, data1)
           @status = status
+          @channel = channel
+          @data1 = data1
         end
         
+        def to_a
+          [@status | @channel, @data1]
+        end
+      end
+      
+      class ExtendedChannelMessage < MidiMessage
+        def initialize(status, channel, data1, data2)
+          @status = status
+          @channel = channel
+          @data1 = data1
+          @data2 = data2
+        end
+        
+        def to_a
+          [@status | @channel, @data1, @data2]
+        end
+      end
+      
+      class NoteMessage < ExtendedChannelMessage
+        alias :pitch :data1
+        alias :velocity :data2
+               
         def to_a
           [@status | @channel, @pitch, @velocity]
         end
@@ -26,50 +45,53 @@ module MidiLex
     
       class NoteOn < NoteMessage    
         def initialize(pitch, velocity = 64, channel = 0)
-          super(pitch, velocity, channel, 0x90)
-        end      
+          super 0x90, channel, pitch, velocity
+        end
       end
       
       class NoteOff < NoteMessage
         def initialize(pitch, channel = 0, velocity = 0)
-          super(pitch, velocity, channel, 0x80)
+          super 0x80, channel, pitch, velocity
         end      
       end
       
-      class Aftertouch < NoteMessage      
+      class Aftertouch < ExtendedChannelMessage
+        alias :pitch :data1
+        alias :pressure :data2
+        
         def initialize(pitch, pressure = 0, channel = 0)
-          super(pitch, pressure, channel, 0xa0)
+          super 0xa0, channel, pitch, pressure
         end
-      
-        alias pressure velocity
-        alias pressure= velocity=
       end
       
-      class ControlChange < MidiMessage
-        attr_accessor :channel, :number, :value
-        STATUS = 0xb0
+      class ControlChange < ExtendedChannelMessage
+        alias :number :data1
+        alias :value :data2
         
         def initialize(number, value, channel = 0)
-          @number = number
-          @value = value
-          @channel = channel
+          super 0xb0, channel, number, value
         end
+      end
+      
+      class ProgramChange < ChannelMessage
+        alias :program :data1
         
-        def to_a
-          [STATUS | @channel, @number, @value]
+        def initialize(channel, program = 0)
+          super 0xc0, channel, program
         end
       end
       
-      class ProgramChange < MidiMessage
-        STATUS = 0xc0
+      class ChannelAftertouch < ChannelMessage
+        alias :pressure :data1
+        def initialize(channel, pressure = 0)
+          super 0xd0, channel, pressure
+        end
       end
       
-      class ChannelAftertouch < MidiMessage
-        STATUS = 0xd0
-      end
-      
-      class PitchBend < MidiMessage
-        STATUS = 0xe0
+      class PitchBend < ExtendedChannelMessage
+        def initialize(channel, value = 8192)
+          super 0xe0, channel, value >> 4, value & 15
+        end
       end
     
     end
