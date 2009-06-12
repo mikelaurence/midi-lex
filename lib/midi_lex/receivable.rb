@@ -31,7 +31,7 @@ module MidiLex
         begin
           msg = klass.new(filter_data(data))
         rescue
-          puts "[Receivable::Typed] Error creating #{klass} with #{data.size} args: #{filter_data(data).inspect}"
+          puts "[Receivable::Typed] Error creating #{klass} with #{filter_data(data).size} args: #{filter_data(data).inspect}"
         end
         
         @target.send @method, msg if msg
