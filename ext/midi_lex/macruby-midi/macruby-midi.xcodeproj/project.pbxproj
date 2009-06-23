@@ -11,33 +11,11 @@
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 		B57CC3130FDCA7A800E8E8BE /* MidiMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = B57CC3120FDCA7A800E8E8BE /* MidiMessenger.m */; };
 		B57CC3150FDCA7D100E8E8BE /* MidiMessenger.h in Headers */ = {isa = PBXBuildFile; fileRef = B57CC3140FDCA7D100E8E8BE /* MidiMessenger.h */; };
+		B590AADB0FF07FB100EDFFA0 /* PYMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B590AADA0FF07FB100EDFFA0 /* PYMIDI.framework */; };
 		B5F3BF770FD86CE500C6E434 /* MidiMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F3BF730FD86CE500C6E434 /* MidiMessage.h */; };
 		B5F3BF780FD86CE500C6E434 /* MidiMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F3BF740FD86CE500C6E434 /* MidiMessage.m */; };
 		B5F3BF790FD86CE500C6E434 /* MidiReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F3BF750FD86CE500C6E434 /* MidiReceiver.m */; };
 		B5F3BF7A0FD86CE500C6E434 /* MidiSender.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F3BF760FD86CE500C6E434 /* MidiSender.m */; };
-		B5F3BF930FD86D0E00C6E434 /* PYMIDI.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F3BF7C0FD86D0E00C6E434 /* PYMIDI.h */; };
-		B5F3BF940FD86D0E00C6E434 /* PYMIDIEndpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F3BF7D0FD86D0E00C6E434 /* PYMIDIEndpoint.h */; };
-		B5F3BF950FD86D0E00C6E434 /* PYMIDIEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F3BF7E0FD86D0E00C6E434 /* PYMIDIEndpoint.m */; };
-		B5F3BF960FD86D0E00C6E434 /* PYMIDIEndpointDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F3BF7F0FD86D0E00C6E434 /* PYMIDIEndpointDescriptor.h */; };
-		B5F3BF970FD86D0E00C6E434 /* PYMIDIEndpointDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F3BF800FD86D0E00C6E434 /* PYMIDIEndpointDescriptor.m */; };
-		B5F3BF980FD86D0E00C6E434 /* PYMIDIEndpointSet.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F3BF810FD86D0E00C6E434 /* PYMIDIEndpointSet.h */; };
-		B5F3BF990FD86D0E00C6E434 /* PYMIDIEndpointSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F3BF820FD86D0E00C6E434 /* PYMIDIEndpointSet.m */; };
-		B5F3BF9A0FD86D0E00C6E434 /* PYMIDIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F3BF830FD86D0E00C6E434 /* PYMIDIManager.h */; };
-		B5F3BF9B0FD86D0E00C6E434 /* PYMIDIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F3BF840FD86D0E00C6E434 /* PYMIDIManager.m */; };
-		B5F3BF9C0FD86D0E00C6E434 /* PYMIDIRealDestination.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F3BF850FD86D0E00C6E434 /* PYMIDIRealDestination.h */; };
-		B5F3BF9D0FD86D0E00C6E434 /* PYMIDIRealDestination.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F3BF860FD86D0E00C6E434 /* PYMIDIRealDestination.m */; };
-		B5F3BF9E0FD86D0E00C6E434 /* PYMIDIRealEndpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F3BF870FD86D0E00C6E434 /* PYMIDIRealEndpoint.h */; };
-		B5F3BF9F0FD86D0E00C6E434 /* PYMIDIRealEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F3BF880FD86D0E00C6E434 /* PYMIDIRealEndpoint.m */; };
-		B5F3BFA00FD86D0E00C6E434 /* PYMIDIRealSource.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F3BF890FD86D0E00C6E434 /* PYMIDIRealSource.h */; };
-		B5F3BFA10FD86D0E00C6E434 /* PYMIDIRealSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F3BF8A0FD86D0E00C6E434 /* PYMIDIRealSource.m */; };
-		B5F3BFA20FD86D0E00C6E434 /* PYMIDIUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F3BF8B0FD86D0E00C6E434 /* PYMIDIUtils.h */; };
-		B5F3BFA30FD86D0E00C6E434 /* PYMIDIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F3BF8C0FD86D0E00C6E434 /* PYMIDIUtils.m */; };
-		B5F3BFA40FD86D0E00C6E434 /* PYMIDIVirtualDestination.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F3BF8D0FD86D0E00C6E434 /* PYMIDIVirtualDestination.h */; };
-		B5F3BFA50FD86D0E00C6E434 /* PYMIDIVirtualDestination.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F3BF8E0FD86D0E00C6E434 /* PYMIDIVirtualDestination.m */; };
-		B5F3BFA60FD86D0E00C6E434 /* PYMIDIVirtualEndpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F3BF8F0FD86D0E00C6E434 /* PYMIDIVirtualEndpoint.h */; };
-		B5F3BFA70FD86D0E00C6E434 /* PYMIDIVirtualEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F3BF900FD86D0E00C6E434 /* PYMIDIVirtualEndpoint.m */; };
-		B5F3BFA80FD86D0E00C6E434 /* PYMIDIVirtualSource.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F3BF910FD86D0E00C6E434 /* PYMIDIVirtualSource.h */; };
-		B5F3BFA90FD86D0E00C6E434 /* PYMIDIVirtualSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F3BF920FD86D0E00C6E434 /* PYMIDIVirtualSource.m */; };
 		B5F3BFAF0FD86D5C00C6E434 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F3BFAE0FD86D5C00C6E434 /* CoreMIDI.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,33 +29,11 @@
 		8DC2EF5B0486A6940098B216 /* macruby-midi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "macruby-midi.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57CC3120FDCA7A800E8E8BE /* MidiMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiMessenger.m; sourceTree = "<group>"; };
 		B57CC3140FDCA7D100E8E8BE /* MidiMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiMessenger.h; sourceTree = "<group>"; };
+		B590AADA0FF07FB100EDFFA0 /* PYMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PYMIDI.framework; path = /Library/Frameworks/PYMIDI.framework; sourceTree = "<absolute>"; };
 		B5F3BF730FD86CE500C6E434 /* MidiMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiMessage.h; sourceTree = "<group>"; };
 		B5F3BF740FD86CE500C6E434 /* MidiMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiMessage.m; sourceTree = "<group>"; };
 		B5F3BF750FD86CE500C6E434 /* MidiReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiReceiver.m; sourceTree = "<group>"; };
 		B5F3BF760FD86CE500C6E434 /* MidiSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiSender.m; sourceTree = "<group>"; };
-		B5F3BF7C0FD86D0E00C6E434 /* PYMIDI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMIDI.h; sourceTree = "<group>"; };
-		B5F3BF7D0FD86D0E00C6E434 /* PYMIDIEndpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMIDIEndpoint.h; sourceTree = "<group>"; };
-		B5F3BF7E0FD86D0E00C6E434 /* PYMIDIEndpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMIDIEndpoint.m; sourceTree = "<group>"; };
-		B5F3BF7F0FD86D0E00C6E434 /* PYMIDIEndpointDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMIDIEndpointDescriptor.h; sourceTree = "<group>"; };
-		B5F3BF800FD86D0E00C6E434 /* PYMIDIEndpointDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMIDIEndpointDescriptor.m; sourceTree = "<group>"; };
-		B5F3BF810FD86D0E00C6E434 /* PYMIDIEndpointSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMIDIEndpointSet.h; sourceTree = "<group>"; };
-		B5F3BF820FD86D0E00C6E434 /* PYMIDIEndpointSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMIDIEndpointSet.m; sourceTree = "<group>"; };
-		B5F3BF830FD86D0E00C6E434 /* PYMIDIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMIDIManager.h; sourceTree = "<group>"; };
-		B5F3BF840FD86D0E00C6E434 /* PYMIDIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMIDIManager.m; sourceTree = "<group>"; };
-		B5F3BF850FD86D0E00C6E434 /* PYMIDIRealDestination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMIDIRealDestination.h; sourceTree = "<group>"; };
-		B5F3BF860FD86D0E00C6E434 /* PYMIDIRealDestination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMIDIRealDestination.m; sourceTree = "<group>"; };
-		B5F3BF870FD86D0E00C6E434 /* PYMIDIRealEndpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMIDIRealEndpoint.h; sourceTree = "<group>"; };
-		B5F3BF880FD86D0E00C6E434 /* PYMIDIRealEndpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMIDIRealEndpoint.m; sourceTree = "<group>"; };
-		B5F3BF890FD86D0E00C6E434 /* PYMIDIRealSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMIDIRealSource.h; sourceTree = "<group>"; };
-		B5F3BF8A0FD86D0E00C6E434 /* PYMIDIRealSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMIDIRealSource.m; sourceTree = "<group>"; };
-		B5F3BF8B0FD86D0E00C6E434 /* PYMIDIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMIDIUtils.h; sourceTree = "<group>"; };
-		B5F3BF8C0FD86D0E00C6E434 /* PYMIDIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMIDIUtils.m; sourceTree = "<group>"; };
-		B5F3BF8D0FD86D0E00C6E434 /* PYMIDIVirtualDestination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMIDIVirtualDestination.h; sourceTree = "<group>"; };
-		B5F3BF8E0FD86D0E00C6E434 /* PYMIDIVirtualDestination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMIDIVirtualDestination.m; sourceTree = "<group>"; };
-		B5F3BF8F0FD86D0E00C6E434 /* PYMIDIVirtualEndpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMIDIVirtualEndpoint.h; sourceTree = "<group>"; };
-		B5F3BF900FD86D0E00C6E434 /* PYMIDIVirtualEndpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMIDIVirtualEndpoint.m; sourceTree = "<group>"; };
-		B5F3BF910FD86D0E00C6E434 /* PYMIDIVirtualSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMIDIVirtualSource.h; sourceTree = "<group>"; };
-		B5F3BF920FD86D0E00C6E434 /* PYMIDIVirtualSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMIDIVirtualSource.m; sourceTree = "<group>"; };
 		B5F3BFAE0FD86D5C00C6E434 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -89,6 +45,7 @@
 			files = (
 				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
 				B5F3BFAF0FD86D5C00C6E434 /* CoreMIDI.framework in Frameworks */,
+				B590AADB0FF07FB100EDFFA0 /* PYMIDI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,29 +93,6 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B5F3BF7C0FD86D0E00C6E434 /* PYMIDI.h */,
-				B5F3BF7D0FD86D0E00C6E434 /* PYMIDIEndpoint.h */,
-				B5F3BF7E0FD86D0E00C6E434 /* PYMIDIEndpoint.m */,
-				B5F3BF7F0FD86D0E00C6E434 /* PYMIDIEndpointDescriptor.h */,
-				B5F3BF800FD86D0E00C6E434 /* PYMIDIEndpointDescriptor.m */,
-				B5F3BF810FD86D0E00C6E434 /* PYMIDIEndpointSet.h */,
-				B5F3BF820FD86D0E00C6E434 /* PYMIDIEndpointSet.m */,
-				B5F3BF830FD86D0E00C6E434 /* PYMIDIManager.h */,
-				B5F3BF840FD86D0E00C6E434 /* PYMIDIManager.m */,
-				B5F3BF850FD86D0E00C6E434 /* PYMIDIRealDestination.h */,
-				B5F3BF860FD86D0E00C6E434 /* PYMIDIRealDestination.m */,
-				B5F3BF870FD86D0E00C6E434 /* PYMIDIRealEndpoint.h */,
-				B5F3BF880FD86D0E00C6E434 /* PYMIDIRealEndpoint.m */,
-				B5F3BF890FD86D0E00C6E434 /* PYMIDIRealSource.h */,
-				B5F3BF8A0FD86D0E00C6E434 /* PYMIDIRealSource.m */,
-				B5F3BF8B0FD86D0E00C6E434 /* PYMIDIUtils.h */,
-				B5F3BF8C0FD86D0E00C6E434 /* PYMIDIUtils.m */,
-				B5F3BF8D0FD86D0E00C6E434 /* PYMIDIVirtualDestination.h */,
-				B5F3BF8E0FD86D0E00C6E434 /* PYMIDIVirtualDestination.m */,
-				B5F3BF8F0FD86D0E00C6E434 /* PYMIDIVirtualEndpoint.h */,
-				B5F3BF900FD86D0E00C6E434 /* PYMIDIVirtualEndpoint.m */,
-				B5F3BF910FD86D0E00C6E434 /* PYMIDIVirtualSource.h */,
-				B5F3BF920FD86D0E00C6E434 /* PYMIDIVirtualSource.m */,
 				B5F3BF730FD86CE500C6E434 /* MidiMessage.h */,
 				B5F3BF740FD86CE500C6E434 /* MidiMessage.m */,
 				B5F3BF750FD86CE500C6E434 /* MidiReceiver.m */,
@@ -172,6 +106,7 @@
 		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B590AADA0FF07FB100EDFFA0 /* PYMIDI.framework */,
 				B5F3BFAE0FD86D5C00C6E434 /* CoreMIDI.framework */,
 				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
 			);
@@ -204,18 +139,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5F3BF770FD86CE500C6E434 /* MidiMessage.h in Headers */,
-				B5F3BF930FD86D0E00C6E434 /* PYMIDI.h in Headers */,
-				B5F3BF940FD86D0E00C6E434 /* PYMIDIEndpoint.h in Headers */,
-				B5F3BF960FD86D0E00C6E434 /* PYMIDIEndpointDescriptor.h in Headers */,
-				B5F3BF980FD86D0E00C6E434 /* PYMIDIEndpointSet.h in Headers */,
-				B5F3BF9A0FD86D0E00C6E434 /* PYMIDIManager.h in Headers */,
-				B5F3BF9C0FD86D0E00C6E434 /* PYMIDIRealDestination.h in Headers */,
-				B5F3BF9E0FD86D0E00C6E434 /* PYMIDIRealEndpoint.h in Headers */,
-				B5F3BFA00FD86D0E00C6E434 /* PYMIDIRealSource.h in Headers */,
-				B5F3BFA20FD86D0E00C6E434 /* PYMIDIUtils.h in Headers */,
-				B5F3BFA40FD86D0E00C6E434 /* PYMIDIVirtualDestination.h in Headers */,
-				B5F3BFA60FD86D0E00C6E434 /* PYMIDIVirtualEndpoint.h in Headers */,
-				B5F3BFA80FD86D0E00C6E434 /* PYMIDIVirtualSource.h in Headers */,
 				B57CC3150FDCA7D100E8E8BE /* MidiMessenger.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,17 +202,6 @@
 				B5F3BF780FD86CE500C6E434 /* MidiMessage.m in Sources */,
 				B5F3BF790FD86CE500C6E434 /* MidiReceiver.m in Sources */,
 				B5F3BF7A0FD86CE500C6E434 /* MidiSender.m in Sources */,
-				B5F3BF950FD86D0E00C6E434 /* PYMIDIEndpoint.m in Sources */,
-				B5F3BF970FD86D0E00C6E434 /* PYMIDIEndpointDescriptor.m in Sources */,
-				B5F3BF990FD86D0E00C6E434 /* PYMIDIEndpointSet.m in Sources */,
-				B5F3BF9B0FD86D0E00C6E434 /* PYMIDIManager.m in Sources */,
-				B5F3BF9D0FD86D0E00C6E434 /* PYMIDIRealDestination.m in Sources */,
-				B5F3BF9F0FD86D0E00C6E434 /* PYMIDIRealEndpoint.m in Sources */,
-				B5F3BFA10FD86D0E00C6E434 /* PYMIDIRealSource.m in Sources */,
-				B5F3BFA30FD86D0E00C6E434 /* PYMIDIUtils.m in Sources */,
-				B5F3BFA50FD86D0E00C6E434 /* PYMIDIVirtualDestination.m in Sources */,
-				B5F3BFA70FD86D0E00C6E434 /* PYMIDIVirtualEndpoint.m in Sources */,
-				B5F3BFA90FD86D0E00C6E434 /* PYMIDIVirtualSource.m in Sources */,
 				B57CC3130FDCA7A800E8E8BE /* MidiMessenger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

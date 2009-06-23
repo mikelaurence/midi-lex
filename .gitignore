@@ -1,3 +1,4 @@
 doc
 ext/rbcoremidi
 ext/midi_lex/macruby-midi/build
+ext/pymidi/build

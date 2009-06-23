@@ -14,10 +14,10 @@
     return port;
 }
 
-- (void) dealloc {
+- (void) finalize {
     [self releasePort];
     NSLog(@"RELEASED ME!");
-    [super dealloc];
+    [super finalize];
 }
 
 - (void) setPort:(PYMIDIEndpoint*) newPort {}
