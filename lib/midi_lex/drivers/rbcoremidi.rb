@@ -1,6 +1,10 @@
 module MidiLex
   module Drivers
     module Rbcoremidi
+      
+      module Base
+      end
+      
       module Receiver
         
         raise "Error: you must use Ruby 1.9 or greater to utilize the rbcoremidi driver (your version is #{RUBY_VERSION})" unless RUBY_VERSION[0..2].to_f >= 1.9

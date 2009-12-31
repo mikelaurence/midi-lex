@@ -9,7 +9,9 @@ module MidiLex
     def use_driver(driver)
       @driver = driver
       require "midi_lex/drivers/#{driver}"
-      extend "MidiLex::Drivers::#{driver.to_s.camelize}::#{self.class.to_s.split('::').last}".camelize.constantize
+      driver_module = "MidiLex::Drivers::#{driver.to_s.camelize}"
+      extend "#{driver_module}::Base".camelize.constantize
+      extend "#{driver_module}::#{self.class.to_s.split('::').last}".camelize.constantize
     end
   
   end

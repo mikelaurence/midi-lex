@@ -77,7 +77,7 @@ module MidiLex
         def status; 0xb0 end
         
         def to_s
-          "[ControlChange] Channel: #{@channel}, Number: #{@number}, Value: #{@value}"
+          "[ControlChange] Channel: #{@channel}, Number: #{number}, Value: #{value}"
         end
       end
       

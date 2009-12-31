@@ -2,6 +2,9 @@ module MidiLex
   module Drivers
     module MacCore
       
+      module Base
+      end
+      
       module Sender
         require 'dl/import'
         

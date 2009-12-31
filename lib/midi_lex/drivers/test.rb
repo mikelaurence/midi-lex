@@ -2,6 +2,9 @@ module MidiLex
   module Drivers
     module Test
       
+      module Base
+      end
+      
       module Sender        
         def ports
           ['Test Out 1', 'Test Out 2']

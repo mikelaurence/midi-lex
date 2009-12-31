@@ -8,25 +8,24 @@ module MidiLex
         
         attr_reader :name
         
-        def ports(type)
+        def _ports(type)
           PYMIDIManager.sharedInstance.send(type).collect{ |s| s.displayName }
         end
                 
-        def port(type, name)
+        def _port(type, name)
           PYMIDIManager.sharedInstance.send(type).find{ |e| name.is_a?(Regexp) ? e.displayName =~ name : e.displayName == name }
         end
         
       end
       
       module Sender
-        include Base
         
         def ports
-          super(:realDestinations)
+          _ports :realDestinations
         end
         
         def open_port(name)
-          if @port = port(:realDestinations, name)
+          if @port = _port(:realDestinations, name)
             @name = name
             @sender = MidiSender.new
             @sender.port = @port
@@ -49,14 +48,13 @@ module MidiLex
       end
       
       module Receiver
-        include Base
         
         def ports
-          super(:realSources)
+          _ports :realSources
         end
         
         def open_port(name)
-          if @port = port(:realSources, name)
+          if @port = _port(:realSources, name)
             @name = name
             @receiver = MidiReceiver.new
             @receiver.port = @port
